@@ -3,8 +3,15 @@
 	<%= link_to 'Home', root_path %>
 </div>
 
-<%= image_tag('tbmm.png', alt: 'The Beard Maketh the Man', class: 'portfolio-image') %>
+<div class="row">
 
-<%= image_tag('trading-faces.png', alt: 'Trading Faces', class: 'portfolio-image') %>
+	<div class="col-md-6">
+		<%= image_tag 'tbmm.png', alt: 'The Beard Maketh the Man', class: 'portfolio-image img-responsive img-rounded' %>
+	</div>
+	<div class="col-md-6">
+		<%= image_tag 'trading-faces.png', alt: 'Trading Faces', class: 'portfolio-image img-responsive img-rounded' %>
+	</div>
+
+</div>
 
 
