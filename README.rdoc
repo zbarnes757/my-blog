@@ -1,28 +1,7 @@
-== README
+== My Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is me taking a static and old looking HTML site and converting it to a rails application.
 
-Things you may want to cover:
+My goal is to be able to log myself in (no one else), then write up blog posts online rather than having to create a new HTML file for each and every post.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+I'll add more here as it grows.
