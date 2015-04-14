@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   get '/about' => 'welcome#about'
   get '/contact' => 'welcome#contact'
+  get '/portfolio' => 'welcome#portfolio'
 
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
