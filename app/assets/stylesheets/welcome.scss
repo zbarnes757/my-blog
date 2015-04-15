@@ -2,8 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1, h4, p, a {
+h1, h4 {
 	font-family: 'Droid Serif', serif;
+}
+
+p, a {
+	font-family: 'Raleway', sans-serif;
 }
 
 .catch-phrase {
