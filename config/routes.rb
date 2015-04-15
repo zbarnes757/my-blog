@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
 
+  get '/about' => 'welcome#about'
+  get '/portfolio' => 'welcome#portfolio'
+
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
+
+  root 'welcome#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

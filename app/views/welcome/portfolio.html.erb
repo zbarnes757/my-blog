@@ -1,0 +1,38 @@
+<h1 class="header">My Portfolio</h1>
+<div class="home-link">
+	<%= link_to 'Home', root_path %>
+</div>
+
+<div class="row">
+
+	<div class="flip-container">
+		<div class="flipper">
+			<div class="front">
+				<%= image_tag 'tbmm.png', alt: 'The Beard Maketh the Man', class: 'portfolio-image img-responsive img-rounded' %>
+			</div>
+			<div class="back">
+				<h4>An application to help users find beard grooming products with the Etsy api. Built with Sinatra and vanilla JavaScript.</h4>
+				<a href="https://github.com/zbarnes757/TBMM">Github</a>
+				<a href="https://tbmm.herokuapp.com/">Heroku</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="flip-container">
+		<div class="flipper">
+			<div class="front">
+				<%= image_tag 'trading-faces.png', alt: 'Trading Faces', class: 'portfolio-image img-responsive img-rounded' %>
+			</div>
+			<div class="back">
+				<h4>Trading Faces is a game where friends compete to see who can imitate the funniest face.  The faces are compared using Face++ facial recognition technology, and a rating is generated based on how well you imitated the other players face.
+
+				Trading Faces is built with decouple architecture (to optimize for mobile development), and uses Rails for the back-end, Javascript, JQuery, and Handlebars for the front-end, Facebook OAuth, and Face++ API.</h4>
+				<a href="https://github.com/evanhughes3/TradingFaces">Github</a>
+				<a href="https://trading-faces.herokuapp.com">Heroku</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
