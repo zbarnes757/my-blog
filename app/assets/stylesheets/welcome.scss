@@ -2,13 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1, h4 {
+/***********
+Universal for Welcome Pages
+***********/
+h1, h3, h4 {
 	font-family: 'Droid Serif', serif;
 }
 
 p, a {
 	font-family: 'Raleway', sans-serif;
 }
+
+.header {
+	text-align: center;
+}
+
+.home-link {
+	text-align: center;
+	margin: 10px;
+}
+
+/***********
+Index Page
+***********/
 
 .catch-phrase {
 	margin-top: 5%;
@@ -24,28 +40,27 @@ p, a {
 	margin: 0 3%;
 }
 
-.header {
-	text-align: center;
-}
-
-.footer {
-	text-align: center;
-	width: 100%;
-}
-
-.home-link {
-	text-align: center;
-	margin: 10px;
-}
-
 .index-photo {
 	margin: auto;
 }
+
+/***********
+About Page
+***********/
 
 .img-responsive.contact-image {
 	width: 57px;
 	display: inline-block;
 	margin: 15px;
+}
+
+/***********
+Portfolio Page
+***********/
+
+.portfolio-title {
+	text-align: center;
+	margin-bottom: 0.5em;
 }
 
 .portfolio-links {
