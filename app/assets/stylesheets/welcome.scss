@@ -34,4 +34,65 @@
 	margin: auto;
 }
 
+/* FLIPPING CSS (http://davidwalsh.name/css-flip) */
+/* entire container, keeps perspective */
+.flip-container {
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  float: left;
+}
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+
+.flip-container {
+  width: 50%;
+  height: 397px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 1.2s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+/*  top: 0;
+  left: 0;*/
+}
+
+.flipper, .front, .back, .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	background-color: lightgray;
+	border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/extra_clean_paper.png');
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 
