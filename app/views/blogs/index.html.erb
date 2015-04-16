@@ -1,4 +1,7 @@
-<h1>Blog</h1>
+<h1 class="header">Blogs</h1>
+<div class="home-link">
+	<%= link_to 'Home', root_path %>
+</div>
 <ul>
 	<% @blogs.each do |blog| %>
 		<li><%= link_to blog.title, blog %></li>
